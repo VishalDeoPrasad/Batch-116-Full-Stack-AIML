@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> web </title>
+        <style>
+            .outerbox{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: green;
+                height: 500px;
+            }
+            .box{
+                background-color: orange;
+                width: 200px;
+                height: 70px;
+                margin: 10px;
+            }
+            .box1{ 
+                flex-shrink: 1;
+            }
+            .box2{
+                flex-shrink: 2;
+            }
+            .box3{
+                flex-shrink: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outerbox">
+            <div class="box box1" > 1 </div>
+            <div class="box box2"> 2 </div>
+            <div class="box box3"> 3 </div>
+        </div>
+    </body>
+</html>

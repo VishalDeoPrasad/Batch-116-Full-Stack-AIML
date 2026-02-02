@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title> Manac </title>
+        <style>
+            body{
+                background-color: lightgray;
+                text-align: center;
+            }
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            .box{
+                background-color: white;
+                width: 230px;
+                margin: 20px;
+                text-align: center;
+                padding: 20px;
+                box-shadow: 0 5px 15px;
+            }
+            .outerbox{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 25px;
+            }
+            button{
+                padding: 9px 20px;
+                background-color: green;
+                color: white;
+                font-size: 20px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1> Choose Your Plan!</h1>
+       <div class="outerbox">
+            <div class="box">
+                <img src="free.png">
+                <h1> Free </h1>
+                <p> $0 Monthly</p>
+                <button> Select </button>
+            </div>
+            <div class="box">
+                <img src="monthly.png">
+                <h1> Monthly </h1>
+                <p> $10 Monthly</p>
+                <button> Select </button>
+            </div>
+            <div class="box">
+                <img src="yearly.png">
+                <h1> Yearly </h1>
+                <p> $50 Monthly</p>
+                <button> Select </button>
+            </div>
+            
+       </div>
+    </body>
+</html>
