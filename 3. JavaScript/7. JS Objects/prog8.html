@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> werb </title>
+    </head>
+    <body>
+        <script>
+           let rooms = {
+                101:{ name:"Vishal", age:31 },
+                102:{ name:"Manac", age:36 },
+                103:{ name:"Amit", age:40 }
+           };
+           for (let k in rooms){
+                let temp = rooms[k].name;
+                if (temp.startsWith("A")){
+                    console.log(k);
+                }  
+           }
+        </script>
+    </body>
+</html>
