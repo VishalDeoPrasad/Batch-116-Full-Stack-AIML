@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> web </title>
+    </head>
+    <body>
+        <h1 id="text"> Manac Infotech Pvt Ltd </h1>
+        <button onclick="showHide()"> hide/show </button>
+        <script>
+            function showHide(){
+                let elm = document.getElementById('text')
+                if (elm.style.display == "none"){
+                    elm.style.display = "block";
+                }
+                else{
+                    elm.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
