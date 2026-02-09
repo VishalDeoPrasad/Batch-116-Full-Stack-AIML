@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> Manac </title> 
+        <style>
+            body{
+                text-align: center;
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+        <h1> Manac Calculator </h1>
+        <input id="n1" type="number" placeholder="Enter Number:">
+        <input id="n2" type="number" placeholder="Enter Number:"> 
+        <br> <br>
+        <button onclick="calculator('+')"> ADD ➕ </button>
+        <button onclick="calculator('-')"> SUB ➖</button>
+        <button onclick="calculator('*')"> MULT ✖️ </button>
+        <button onclick="calculator('/')"> DIV ➗</button>
+        <p id="output"> </p>
+        <script>
+            function calculator(op){
+                let n1 = Number(document.getElementById('n1').value);
+                let n2 = Number(document.getElementById('n2').value);
+                if (op == "+"){
+                    let ans = n1+n2;
+                    document.getElementById('output').innerText = ans;
+                }
+                else if (op == "-"){
+                    let ans = n1-n2;
+                    document.getElementById('output').innerText = ans;
+                }
+                else if (op == "*"){
+                    let ans = n1*n2;
+                    document.getElementById('output').innerText = ans;
+                }
+                else if (op == "/"){
+                    let ans = n1/n2;
+                    document.getElementById('output').innerText = ans;
+                }
+            }
+        </script>
+    </body>
+</html>
