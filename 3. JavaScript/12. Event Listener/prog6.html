@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> web </title>
+        <style>
+            body{
+                text-align: center;
+            }
+            h1{
+                color: #ff3366;
+            }
+            button{
+                font-size: 25px;
+                padding: 6px 15px;
+                border-radius: 10px;
+                margin: 20px;
+            }
+            #nobtn{
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="love.webp" width="200"> 
+        <h1> Do you want to be my Valentine? 💞</h1>
+        <button id="yesbtn"> Yes 💖</button>
+        <button id="nobtn"> No 🥹</button>
+        <script>
+            function moveElm(){
+                btn.style.left = (Math.random() * 200) + "px";
+                btn.style.top = (Math.random() * 200) + "px";
+            }
+            let btn = document.getElementById("nobtn");
+            btn.addEventListener("mouseover", moveElm)
+        </script>
+    </body>
+</html>
