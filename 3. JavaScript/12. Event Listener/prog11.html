@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> web </title>
+    </head>
+    <body>
+        <form id="login_form">
+            <input type="text" id="name" placeholder="Enter Name:"> 
+            <input type="password" id="password" placeholder="Enter Password:">
+            <button type="submit"> Login </button> 
+        </form>
+        <script>
+            let username = document.getElementById("name");
+
+            function validateName(e){
+                e.preventDefault();
+                if (username.value == ""){
+                    alert("User Name is empty");
+                }
+            }
+            let form = document.getElementById("login_form");
+            form.addEventListener("submit", validateName);
+        </script>
+    </body>
+</html>
