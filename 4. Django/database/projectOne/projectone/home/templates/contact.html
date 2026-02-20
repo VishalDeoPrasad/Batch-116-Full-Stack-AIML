@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(120deg,#6a11cb,#2575fc);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .container{
+            background:white;
+            padding:40px;
+            width:350px;
+            border-radius:15px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+            text-align:center;
+        }
+
+        h1{
+            margin-bottom:25px;
+            color:#333;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border-radius:8px;
+            border:1px solid #ccc;
+            font-size:14px;
+            transition:0.3s;
+        }
+
+        input:focus, textarea:focus{
+            border-color:#2575fc;
+            outline:none;
+            box-shadow:0 0 5px rgba(37,117,252,0.4);
+        }
+
+        textarea{
+            resize:none;
+            height:100px;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:8px;
+            background:#2575fc;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+            margin-top:10px;
+        }
+
+        button:hover{
+            background:#1b5edb;
+            transform:scale(1.03);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <form method="post">
+            {% csrf_token %}
+            <input name="name" type="text" placeholder="Your Name">
+            <input name="mobile" type="tel" placeholder="Your Mobile">
+            <input name="email" type="email" placeholder="Your Email">
+            <textarea name="msg" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

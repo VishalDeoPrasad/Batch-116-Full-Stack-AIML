@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1> Manac infotech Pvt Ltd </h1>
+        {% if hours < 12 %}
+            <h2> Good Morning </h2>
+        {% elif hours < 17 %}
+            <h2> Good Afternoon </h2>
+        {% else %}
+            <h2> Good Night😴 </h2>
+        {% endif %}
+
+        <h2> {{ hours }} {{ minutes }} {{ second }} </h2>
+    </body>
+</html>

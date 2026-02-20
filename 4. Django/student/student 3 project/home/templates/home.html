@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1> Manac infotech Pvt Ltd </h1>
+        {% for name in student %}
+            {% if name == "Anita" %}
+                <p> <b>{{ name }}</b> </p>
+            {% else %}
+                <p> {{ name }} </p>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>
