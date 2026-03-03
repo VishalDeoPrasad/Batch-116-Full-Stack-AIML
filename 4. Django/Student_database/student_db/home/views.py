@@ -3,14 +3,14 @@ from home.models import Student
 from django.db.models import Q
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, permission_required
 
 # Create your views here.
 @login_required(login_url='login')
 def home(request):
     return render(request, "home.html")
 
-@login_required(login_url='login')
+@permission_required("home.add_student", raise_exception=True)
 def add(request):
     if request.method == "POST":
         name = request.POST.get("name")
@@ -41,7 +41,7 @@ def student_list(request):
 
     return render(request, "student_list.html", data)
 
-@login_required(login_url='login')
+@permission_required("home.change_student", raise_exception=True)
 def student_edit(request, id):
     student = Student.objects.get(id=id)
     if request.method == "POST":
@@ -56,7 +56,7 @@ def student_edit(request, id):
     }
     return render(request, "student_edit.html", data)
 
-@login_required(login_url='login')
+@permission_required("home.delete_student", raise_exception=True)
 def student_delete(request, id):
     student = Student.objects.get(id=id)
     student.delete()

@@ -44,9 +44,19 @@
         <nav>
             {% if user.is_authenticated %}
                 <a href="/"> Home </a>
-                <a href="/add/"> Add Student  </a>
+                {% if perms.home.add_student %}
+                    <a href="/add/"> Add Student  </a>
+                {% endif %}
                 <a href="/student_list/"> Student List </a>
-                <a> <b> Hello, {{ user.username }} </b> </a> 
+                <a> Welcome, {{ user.username }} 
+                    (Role: 
+                    {% for group in user.groups.all %}
+                        {{ group.name }}
+                    {% empty %}
+                        No Role
+                    {% endfor %}
+                    )
+                </a>
                 <a href="/logout/"> Logout </a>
 
             {% else %}
@@ -69,7 +79,9 @@
                     <th> Age </th>
                     <th> Mobile </th>
                     <th> Email </th>
-                    <th> Actions </th>
+                    {% if perms.home.delete_student or perms.home.change_student %}
+                            <th> Actions </th>
+                    {% endif %}
                 </tr>
             </thead>
             <tbody>
@@ -80,10 +92,17 @@
                         <td> {{student.age}} </td>
                         <td> {{student.mobile}} </td>
                         <td> {{student.email}} </td>
-                        <td>
-                            <a href="/edit/{{ student.id }}"> Edit </a> | 
-                            <a href="/delete/{{ student.id }}"> Delete </a>
-                        </td>
+                        {% if perms.home.delete_student or perms.home.change_student %}
+                            <td>
+                                {% if perms.home.change_student %}
+                                    <a href="/edit/{{ student.id }}"> Edit  </a>
+                                {% endif %} |
+                                
+                                {% if perms.home.delete_student %}
+                                <a href="/delete/{{ student.id }}"> Delete </a>
+                                {% endif %}
+                            </td>
+                        {% endif %}
                     </tr>
                 {% endfor %}
             </tbody>
