@@ -1,0 +1,7 @@
+Step 1: Understand our dataset
+Step 2: Clean your dataset
+    - Handling Missing Value
+    - Handling Duplicate Value
+    - More
+Step 3: Univariate Analysis
+Step 4: Bi-variate Analysis
