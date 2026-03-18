@@ -1,0 +1,32 @@
+1. Univarite Analysis
+    Categorical columns --> 
+        1. value_counts()
+        2. Bar Chart
+        3. Pie Chart
+        4. Donut chart
+
+    Categorical columns (but Numerical in Nature)
+        1. value_counts
+        2. Bar Chart
+
+    Numerical columns -->
+        1. Summary --> describe()
+        2. Histogram
+        3. box plot
+        4. Volin Plot
+
+2.Bi-Variate Analysis
+    1. Categorical vs Categorical
+        1. Crosstab
+        2. Grouped Bar Chart
+        3. Stacked Bar Chart
+        4. Heatmap
+
+    2. Categorical vs Numerical
+        1. Box Plot
+        2. Violin Plot
+        3. Strip Plot
+        4. Histogram by Gender
+        5. Average Bar Plot
+        
+    3. Numerical vs Numerical
