@@ -1,0 +1,51 @@
+age,gender,education_level,job_title,years_experience,company_size,industry,location,remote_work,salary
+22,Male,Bachelor's,Junior Developer,1,Small,Technology,Hyderabad,Yes,350000
+25,Female,Master's,Data Analyst,2,Medium,Finance,Bangalore,No,520000
+28,Male,Bachelor's,Software Engineer,4,Large,Technology,Mumbai,Yes,850000
+30,Female,PhD,Data Scientist,5,Large,Research,Delhi,No,1200000
+32,Male,Master's,Senior Developer,7,Large,Technology,Hyderabad,Yes,1400000
+35,Female,Bachelor's,Product Manager,8,Medium,E-Commerce,Pune,No,1100000
+27,Male,Bachelor's,Business Analyst,3,Small,Consulting,Chennai,No,480000
+29,Female,Master's,ML Engineer,4,Large,Technology,Bangalore,Yes,1050000
+33,Male,PhD,Research Scientist,6,Large,Pharmaceuticals,Mumbai,No,1300000
+40,Female,Master's,Engineering Manager,12,Large,Technology,Hyderabad,No,2200000
+24,Male,Bachelor's,Frontend Developer,2,Startup,Technology,Pune,Yes,420000
+26,Female,Bachelor's,UX Designer,3,Medium,Design,Delhi,Yes,600000
+31,Male,Master's,DevOps Engineer,6,Large,Technology,Bangalore,Yes,1150000
+34,Female,Master's,Cloud Architect,8,Large,Technology,Mumbai,No,1600000
+38,Male,Bachelor's,Senior Manager,10,Large,Banking,Hyderabad,No,1800000
+23,Female,Bachelor's,Junior Analyst,1,Small,Finance,Chennai,No,320000
+36,Male,PhD,Principal Scientist,9,Large,Technology,Bangalore,No,2000000
+42,Female,Master's,VP Engineering,15,Large,Technology,Mumbai,No,3500000
+29,Male,Bachelor's,Full Stack Developer,5,Medium,Technology,Pune,Yes,900000
+27,Female,Master's,AI Researcher,2,Large,Research,Delhi,Yes,950000
+33,Male,Bachelor's,QA Engineer,7,Medium,Technology,Hyderabad,No,750000
+30,Female,Master's,Data Engineer,5,Large,Technology,Bangalore,Yes,1100000
+37,Male,PhD,Technical Lead,10,Large,Technology,Mumbai,Yes,1900000
+25,Female,Bachelor's,Content Strategist,2,Small,Marketing,Chennai,No,380000
+43,Male,Master's,CTO,18,Large,Technology,Delhi,No,4500000
+28,Male,Bachelor's,Android Developer,4,Medium,Technology,Hyderabad,Yes,750000
+31,Female,Master's,Product Analyst,6,Medium,E-Commerce,Pune,No,950000
+45,Male,MBA,Director of Sales,20,Large,Technology,Bangalore,No,3800000
+26,Female,Bachelor's,HR Executive,2,Medium,HR,Mumbai,No,450000
+35,Male,Master's,Network Engineer,8,Large,Telecom,Delhi,No,1050000
+29,Female,Bachelor's,iOS Developer,4,Startup,Technology,Hyderabad,Yes,800000
+32,Male,Master's,Systems Analyst,7,Large,IT Services,Chennai,No,1000000
+38,Female,PhD,ML Research Lead,11,Large,Technology,Bangalore,Yes,2400000
+24,Male,Bachelor's,Support Engineer,1,Small,IT Services,Pune,No,290000
+41,Female,Master's,Scrum Master,13,Large,Technology,Mumbai,No,1600000
+27,Male,Bachelor's,Cybersecurity Analyst,3,Medium,Security,Hyderabad,No,620000
+30,Female,Master's,BI Developer,5,Large,Finance,Delhi,Yes,900000
+36,Male,MBA,Operations Manager,9,Large,Logistics,Bangalore,No,1300000
+23,Female,Bachelor's,UI Developer,1,Startup,Technology,Chennai,Yes,340000
+34,Male,PhD,Solutions Architect,8,Large,Technology,Mumbai,Yes,1700000
+28,Female,Master's,NLP Engineer,3,Large,Technology,Hyderabad,Yes,1050000
+33,Male,Bachelor's,Database Administrator,7,Medium,IT Services,Pune,No,870000
+39,Female,Master's,Program Manager,12,Large,Technology,Delhi,No,2100000
+25,Male,Bachelor's,SEO Specialist,2,Small,Marketing,Bangalore,No,360000
+44,Male,MBA,Head of Product,16,Large,Technology,Mumbai,No,4200000
+26,Female,Master's,Quantitative Analyst,2,Large,Finance,Hyderabad,Yes,1100000
+31,Male,Bachelor's,Embedded Engineer,6,Medium,Automotive,Chennai,No,850000
+37,Female,PhD,Research Director,10,Large,Pharmaceuticals,Delhi,No,2300000
+29,Male,Master's,Platform Engineer,4,Large,Technology,Bangalore,Yes,1150000
+22,Female,Bachelor's,Intern Developer,0,Startup,Technology,Pune,Yes,240000
