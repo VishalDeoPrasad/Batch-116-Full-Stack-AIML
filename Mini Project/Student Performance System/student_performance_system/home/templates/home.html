@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance System</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            background: white;
+            width: 400px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1{
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label{
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        input:focus{
+            border-color: #4facfe;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #4facfe;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: #007bff;
+        }
+
+        .result{
+            margin-top: 20px;
+            padding: 10px;
+            background: #e8f5e9;
+            color: green;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎓 Student Performance System</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <label>Hours Studied</label>
+            <input type="number" name="hours" placeholder="Enter study hours">
+
+            <label>Attendance</label>
+            <input type="number" name="attendance" placeholder="Enter attendance %">
+
+            <label>Assignments Submitted</label>
+            <input type="number" name="assignments" placeholder="Enter assignments count">
+
+            <label>Previous Score</label>
+            <input type="number" name="score" placeholder="Enter previous score">
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if result %}
+            <div class="result">
+                {{ result }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

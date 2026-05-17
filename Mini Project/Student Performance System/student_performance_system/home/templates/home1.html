@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1> Student Preformance System</h1>
+        <form method="POST">
+            {% csrf_token %}
+
+            <label> Hours Studied: </label>
+            <input type="number" name="hours"> <br><br>
+
+            <label> Attendance: </label>
+            <input type="number" name="attendance"> <br><br>
+
+            <label> Assignments Submitted: </label>
+            <input type="number" name="assignments"> <br><br>
+
+            <label> Previous Score: </label>
+            <input type="number" name="score"> <br><br>
+
+            <button type="submit"> Predict </button>
+        </form>
+
+        {% if result %}
+            <h2> {{ result }}</h2>
+        {% endif %}
+    </body>
+</html>

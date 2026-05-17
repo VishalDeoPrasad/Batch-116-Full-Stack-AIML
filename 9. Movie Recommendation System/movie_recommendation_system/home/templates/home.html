@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> Home </title>
+    </head>
+    <body>
+        <h1> Movie Recommendation System</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <select name="selected_movie">
+                {% for movie in movies %}
+                    <option> {{movie}} </option>
+                {% endfor %}
+            </select>
+            <button> Show Recommendation </button>
+
+            <h2> Top 10 Recommended Movies </h2>
+            <ol>
+                {% for movie in rec_movie %}
+                    <li> {{movie}}</li>
+                {% endfor %}
+            </ol>
+        </form>
+    </body>
+</html>

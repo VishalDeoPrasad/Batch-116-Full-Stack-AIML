@@ -1,0 +1,37 @@
+#### <b> Steps in Data Preprocessing</b>
+1. <b> Understand data</b>
+    1. Rows & Columns
+    1. Features columns & Target column
+    1. Numerical vs Categorical Columns
+2. <b> Handle Missing Value</b>
+    1. Remove rows with having missing value.
+    2. Fill missing value with contant Value.
+    3. Mean Imputation: fill the missing value with mean
+    4. Median Imputation: fill the missing value with median 
+    5. Mode Imputation: fill the missing value with mode  
+    6. Using Forward Fill (ffill)
+    7. Using Backward Fill (bfill)
+    8. Fill Missing using interpolate()
+    9. Fill Missing Value with some logic
+    10. Using Machine Learning
+        - KNN Imputer
+        - Iterative Imputer
+3. <b> Handle Duplicates row</b>
+4. <b>Fix Data Types (if we have)</b>
+5. <b>Handle Categorical Columns</b>
+    1. Label Encoding
+    2. One-Hot Encoding
+    3. Ordinal Encoding
+    4. Traget Encoding
+    5. Frequency Encoding
+    6. Binary Encoding
+6. <b>Handle Outliers</b>
+7. <b>Feature Scaling</b>
+    1. Standardization (StandardScaler)
+    2. Normalization (MinMaxScaler)
+    3. Robust Sacling
+8. <b>Feature Transformation</b>
+9. Feature Engineering
+    1. Date-Based Feature Engineering
+10. Feature Selection
+11. Train Test Split
